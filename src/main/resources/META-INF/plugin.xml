@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.lm.nexus-plugin</id>
+    <name>nexus plugin</name>
+    <vendor email="lanmiao1105@gmail.com" url="">LM</vendor>
+
+    <description>nexus plugin for AndroidStudio</description>
+
+    <extensions defaultExtensionNs="com.intellij"></extensions>
+
+    <actions>
+        <group id="com.lm.plugins.nexus.menu" text="Nexus" description="Nexus Plugin Menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="com.lm.plugins.nexus.upload" class="com.lm.UploadAction" text="Upload"
+                    description="Upload to nexus repository"/>
+        </group>
+    </actions>
+</idea-plugin>
