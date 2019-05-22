@@ -1,11 +1,11 @@
-package com.lm;
+package com.lm.plugin.idea.nexus;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.LangDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
-import com.lm.utils.Utils;
+import com.lm.plugin.idea.nexus.utils.Utils;
 import org.jetbrains.annotations.NotNull;
 
 public class UploadAction extends AnAction {

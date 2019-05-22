@@ -1,4 +1,4 @@
-package com.lm;
+package com.lm.plugin.idea.nexus;
 
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleUtil;
@@ -7,9 +7,9 @@ import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiFile;
-import com.lm.utils.Utils;
-import com.lm.utils.io.IOUtils;
-import com.lm.utils.io.InputStreamWrapper;
+import com.lm.plugin.idea.nexus.utils.Utils;
+import com.lm.plugin.idea.nexus.utils.io.IOUtils;
+import com.lm.plugin.idea.nexus.utils.io.InputStreamWrapper;
 import org.gradle.tooling.*;
 
 import javax.swing.*;
@@ -168,6 +168,12 @@ public class UploadConfigDialog extends JDialog {
     }
 
     private void onUploadClick() {
+
+        if (!buildFile.exists()){
+            Utils.showErrorDialog("only support gradle");
+            return;
+        }
+
         try {
             String url = tfUrl.getText();
             String userName = tfUserName.getText();
@@ -223,7 +229,6 @@ public class UploadConfigDialog extends JDialog {
             uploadingDialog.pack();
             uploadingDialog.setVisible(true);
             connection.close();
-
         } catch (Exception e) {
             Utils.showErrorDialog(e.getMessage());
         }

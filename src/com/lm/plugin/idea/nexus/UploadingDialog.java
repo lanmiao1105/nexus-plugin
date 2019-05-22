@@ -1,4 +1,4 @@
-package com.lm;
+package com.lm.plugin.idea.nexus;
 
 import javax.swing.*;
 import java.awt.*;

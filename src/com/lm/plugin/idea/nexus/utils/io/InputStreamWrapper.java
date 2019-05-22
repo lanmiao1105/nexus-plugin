@@ -1,7 +1,7 @@
-package com.lm.utils.io;
+package com.lm.plugin.idea.nexus.utils.io;
 
-import com.lm.utils.io.bean.IOBuffer;
-import com.lm.utils.io.bean.IOBufferPool;
+import com.lm.plugin.idea.nexus.utils.io.bean.IOBuffer;
+import com.lm.plugin.idea.nexus.utils.io.bean.IOBufferPool;
 
 import java.io.EOFException;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.lm.utils.io.bean;
+package com.lm.plugin.idea.nexus.utils.io.bean;
 
 /**
  * IO缓冲区
