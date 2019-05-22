@@ -1,4 +1,4 @@
-package com.lm.utils;
+package com.lm.plugin.idea.nexus.utils;
 
 import com.intellij.openapi.ui.Messages;
 

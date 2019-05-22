@@ -1,4 +1,4 @@
-package com.lm.utils.io;
+package com.lm.plugin.idea.nexus.utils.io;
 
 /**
  * 类型转换工具类

@@ -1,4 +1,4 @@
-package com.lm.utils.io;
+package com.lm.plugin.idea.nexus.utils.io;
 
 import java.io.*;
 
